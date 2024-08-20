@@ -14,15 +14,8 @@ form.addEventListener('submit' , async(event) => {
     console.log(user);
     email.value = ''
     password.value = ''
-    window.location = 'addproduct.html'
+    window.location = 'postads.html'
     
     
   })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log(errorMessage);
-    
-  });
-
 })

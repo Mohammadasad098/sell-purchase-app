@@ -3,103 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css">
-    <title>signup</title>
 </head>
 <body>
-   
-<!-- navbar started -->
 
 
-<div class="navbar bg-base-100 bg-[#5353db] ">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
+    <!--Navbar started--> 
+    
+    <div class="navbar bg-[#3869fe] text-[#fff] w-[100%]">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
+  </div>
+  <div class="flex-none">
+    <div class="dropdown dropdown-end">
+    </div>
+    <div class="dropdown dropdown-end">
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
     </div>
   </div>
-
-
-  <!-- navbar ended -->
-
-<div class="text-5xl center my-[60px]">Registration</div>
-<!-- form started -->
-
-
-  <div class="mx-[600px] border-4 border-indigo-500/50 p-5">
-    <form id="form">
-    <label class="input input-bordered flex items-center gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          fill="currentColor"
-          class="h-4 w-4 opacity-70">
-          <path
-            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-        </svg>
-        <input id="firstname" type="text" class="grow" placeholder="First Name" />
-      </label>
-      <label class="input input-bordered flex items-center gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          fill="currentColor"
-          class="h-4 w-4 opacity-70">
-          <path
-            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-        </svg>
-        <input id="lastname" type="text" class="grow" placeholder="Last Name" />
-      </label>
-  <label class="input input-bordered flex items-center gap-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 16 16"
-      fill="currentColor"
-      class="h-4 w-4 opacity-70">
-      <path
-        d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-      <path
-        d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-    </svg>
-    <input id="email" type="text" class="grow" placeholder="Email" />
-  </label>
-  <label class="input input-bordered flex items-center gap-2">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 16 16"
-      fill="currentColor"
-      class="h-4 w-4 opacity-70">
-      <path
-        fill-rule="evenodd"
-        d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-        clip-rule="evenodd" />
-    </svg>
-    <input id="password" type="password" class="grow" placeholder="Password" />
-  </label><br>
-  <input class="p-2 center btn btn-primary"  type="file" >
-  <br> <br>
-  <div class="center">
-    <button type="submit" class="ml-30 btn btn-primary">REGISTER</button>
-  </div>
-   <br>
-  <div class="center">
-    <a href="index.html">Already a user? please login</a>
-  </div>
-
 </div>
+
+    <!--Navbar ended--> 
     
 
+      <!--form started-->
 
-<!-- form ended -->
+        
+        
+        <div class="flex justify-center m-[10vh]">
+   <form id="form">
+            <div class="my-3">
+                <h1 class="text-center text-4xl">REGISTER</h1>
+            </div>
+    <div class="items-center justify-center border rounded-3xl px-[18px] h-[auto] w-[100%] bg-[#ffeef2] mt-3">
+        <label class="form-control w-full max-w-xs mt-5">
+  <input type="text" id="firstname" placeholder="First Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]"/>
+</label>
+<label class="form-control w-full max-w-xs mt-5">
+  <input type="text" placeholder="Last Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]" />
+</label>
+        <label class="form-control w-full max-w-xs mt-5">
+  <input type="email" placeholder="Email" id="email" class="input input-bordered max-w-sm w-[20rem]" />
+</label>
+    <label class="form-control w-full max-w-xs mt-3">
+  <input type="password" id="password" placeholder="Password" class="input input-bordered max-w-sm w-[20rem]" />
+</label>
+<input type="file" id="input-file" class="file-input file-input-bordered file-input-info w-full max-w-xs mt-5" />
+<div class="text-center mt-3">
+    <button type="submit" class="btn bg-[#006bfd] mt-4 text-[#fff]" id="register-btn">REGISTER</button>
+</div>
+<div class="mt-5 text-center">
+    <a class="text-[#006bfd]" href="./login.html">ALREADY A USER? PLEASE LOGIN</a>
+</div>
+</div>
+</form>     
+        </div>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="signup.js"></script>
+        <!-- form ended -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="signup.js"></script>  
 </body>
 </html>
-
-
-

@@ -7,7 +7,7 @@ onAuthStateChanged(auth, (user) => {
       console.log(uid);
       
     } else {
-        window.location = 'index.html'
+        window.location = 'login.html'
     }
   });
 
@@ -19,9 +19,15 @@ onAuthStateChanged(auth, (user) => {
   logout.addEventListener('click' , ()=> {
     signOut(auth).then(() => {
         console.log('logout successfully');
-        window.location = 'index.html'
+        window.location = 'login.html'
       }).catch((error) => {
         console.log(error);
         
       });
   })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    
+  });
