@@ -128,18 +128,23 @@ function renderTodo() {
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+
+
   const titleValue = title.value.trim();
   const descriptionValue = description.value.trim();
   const priceValue = price.value.trim();
   const nameValue = name.value.trim();
   const contactNumberValue = contactNumber.value.trim();
 
-
-  localStorage.setItem('title' , titleValue);
-  localStorage.setItem('description' , descriptionValue);
-  localStorage.setItem('price' , priceValue);
-  localStorage.setItem('name' , nameValue);
-  localStorage.setItem('contactNumber' , contactNumberValue);
+  let obj = {
+    title: titleValue,
+          description: descriptionValue,
+          price: priceValue,
+          name: nameValue,
+          contactNumber: contactNumberValue,
+}
+localStorage.setItem('userData' , JSON.stringify(obj))
+window.location.href = './index.html'
 
 
   try {
