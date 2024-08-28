@@ -57,7 +57,7 @@ form.addEventListener("submit", async (event) => {
         console.log("Document successfully added to Firestore.");
 form.reset()
         // Redirect to the index.html page after successful submission
-        window.location.href = 'index.html';
+        window.location.href = 'renderads.html';
     } catch (e) {
         console.error("Error adding document: ", e);
     }

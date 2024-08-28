@@ -3,36 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post Ads</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div class="flex-none gap-2">
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-              </div>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li id="logout-btn"><a>Logout</a></li>
-            </ul>
+  <div class="navbar bg-[#3869fe]">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl text-[#fff]" href="./index.html">Buy / Sells Corner</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
           </div>
         </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a class="text-[#09090b]" id="logout-btn">Logout</a></li>
+        </ul>
       </div>
+    </div>
+  </div>
+    <!--Navbar started-->  
+
+     <!--Navbar ended-->  
+
+          <!--Post Ads started-->
+
+          <div>
+            <h1 class="text-center font-bold text-3xl mt-[25px]">Post AD</h1>
+          </div>
+<div class="flex flex-col items-center py-[60px] px-[0px] w-[87%] mt-[20px] justify-center bg-[#0256ff] m-[0] m-[auto] rounded-lg">
+    <input class="hidden" type="file" id="productImage">
+    <label class="h-[100px] w-[100px] flex justify-center items-center text-[#fff] bg-[#0256ff] pb-[10px] rounded-[30px] text-[130px] sm: text-[65px] border-solid border-[10px]" for="productImage">+</label>
+    <h4 class="mt-[20px] text-[#fff] sm:text-2xl text-[18px]">Upload Product Photo</h4> 
+  </div>
+<form id="form">  
+            <div class="mx-[20px] sm:mx-[60px] md:mx-[80px] lg:mx-[90px] mt-[50px] ">
+            <input type="text" placeholder="Product Title" class="input input-bordered w-full max-w-9xl mt-6" id="title" required/>
+            <input type="text" placeholder="Product Description" class="input input-bordered w-full max-w-8xl mt-6" id="description" required />
+             <br>
+            <input type="number" placeholder="Enter Price" class="input input-bordered w-full max-w-8xl mt-6" id="price" required />
+            <input type="text" placeholder="Enter your Name" class="input input-bordered w-full max-w-8xl mt-6" id="name" required />
+            <input type="number" placeholder="Enter Your Contact Number" class="input input-bordered w-full max-w-8xl mt-6" id="contact-number" required />
+            <button type="submit" class="btn btn-info mt-7 text-[#fff]" id="post-btn">POST NOW</button>
+          </div>
+          </form>
+
+          <!--Post Ads ended-->  
+
+<div id="renderdiv"></div>
 
 
-
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script type="module" src="postads.js"></script>  
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+ <script src="https://cdn.tailwindcss.com"></script> 
+    <script type="module" src="postads.js"></script>
 </body>
 </html>
 

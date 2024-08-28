@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-[#3869fe] text-[#fff]">
         <div class="flex-1">
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-xl" href="./index.html">Buy / Sells Corner</a>
         </div>
         <div class="flex-none gap-2">
           <div class="dropdown dropdown-end">
@@ -17,18 +17,29 @@
               <div class="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  src="https://www.ledr.com/colours/black.jpg" />
               </div>
             </div>
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <a href="login.html">Signin</a>
+              <li><a class="text-[#09090b]" href="login.html">Signin</a></li>
             </ul>
           </div>
         </div>
       </div>
-
+      <div>
+  <form class="w-full flex justify-center mt-6 max-w-full pl-[15px] pr-[15px]" id="search-input">   
+      <input type="text" placeholder="Search..." class="input input-bordered input-[#343a40] w-full max-w-7xl" />
+  </form>
+       </div>
+          <div class="mx-[8rem] mt-[40px]">
+            <h2 class="text-3xl font-bold">Products</h2>
+          </div>
+          <div class="flex justify-center mt-[40px] flex-wrap items-center sm:mx-[60px]  mx-[20px]">
+             <div id="div-cards" class="flex justify-center gap-[50px] flex-wrap">
+  </div>
+  </div>
 
 
       <script src="https://cdn.tailwindcss.com"></script>
