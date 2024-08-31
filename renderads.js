@@ -17,6 +17,8 @@ const db = getFirestore()
 export const colRef =  collection(db , "products")
 
 const div = document.querySelector('#div-cards')
+const profileImg = document.querySelector('#profile-img')
+
 
 getDocs(colRef)
   .then((snapshot) => {
@@ -27,8 +29,7 @@ getDocs(colRef)
 
     // Log the title of each product
     products.forEach(product => {
-      div.innerHTML += `
-      <div class="card bg-base-100 w-96 shadow-xl">
+      div.innerHTML += `      <div class="card bg-base-100 w-96 shadow-xl">
   <figure>
     <img
       src=""
@@ -45,6 +46,7 @@ getDocs(colRef)
 </div>
 </hr>
       `
+
       console.log(product);
     });
   })

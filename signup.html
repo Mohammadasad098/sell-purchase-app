@@ -1,3 +1,5 @@
+
+You said:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,54 +10,46 @@
 </head>
 <body>
 
-
     <!--Navbar started--> 
-    
     <div class="navbar bg-[#3869fe] text-[#fff] w-[100%]">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
-  </div>
-</div>
-
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">Buy / Sells Corner</a>
+        </div>
+    </div>
     <!--Navbar ended--> 
-    
 
-      <!--form started-->
-
-        
-        
-        <div class="flex justify-center m-[10vh]">
-   <form id="form">
+    <!--form started-->
+    <div class="flex justify-center m-[10vh] max-w-md mx-auto">
+        <form id="form">
             <div class="my-3">
                 <h1 class="text-center text-4xl">REGISTER</h1>
             </div>
-    <div class="items-center justify-center border rounded-3xl px-[18px] h-[auto] w-[100%] bg-[#ffeef2] mt-3">
-        <label class="form-control w-full max-w-xs mt-5">
-  <input type="text" id="firstname" placeholder="First Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]"/>
-</label>
-<label class="form-control w-full max-w-xs mt-5">
-  <input type="text" placeholder="Last Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]" />
-</label>
-        <label class="form-control w-full max-w-xs mt-5">
-  <input type="email" placeholder="Email" id="email" class="input input-bordered max-w-sm w-[20rem]" />
-</label>
-    <label class="form-control w-full max-w-xs mt-3">
-  <input type="password" id="password" placeholder="Password" class="input input-bordered max-w-sm w-[20rem]" />
-</label>
-<input type="file" id="input-file" class="file-input file-input-bordered file-input-info w-full max-w-xs mt-5" />
-<div class="text-center mt-3">
-    <button type="submit" class="btn bg-[#006bfd] mt-4 text-[#fff]" id="register-btn">REGISTER</button>
-</div>
-<div class="mt-5 text-center">
-    <a class="text-[#006bfd]" href="./login.html">ALREADY A USER? PLEASE LOGIN</a>
-</div>
-</div>
-</form>     
-        </div>
+            <div class="items-center justify-center border rounded-3xl px-[18px] h-[auto] w-[100%] bg-[#ffeef2] mt-3">
+                <label class="form-control w-full max-w-xs mt-5">
+                    <input type="text" id="firstname" placeholder="First Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]"/>
+                </label>
+                <label class="form-control w-full max-w-xs mt-5">
+                    <input type="text" id="lastname" placeholder="Last Name" class="input input-bordered max-w-sm w-[20rem] placeholder:text-[#208b3a]" />
+                </label>
+                <label class="form-control w-full max-w-xs mt-5">
+                    <input type="email" id="email" placeholder="Email" class="input input-bordered max-w-sm w-[20rem]" />
+                </label>
+                <label class="form-control w-full max-w-xs mt-3">
+                    <input type="password" id="password" placeholder="Password" class="input input-bordered max-w-sm w-[20rem]" />
+                </label>
+                <input type="file" id="signup-image" accept="image/*" class="file-input bg-[#3869fe] w-full max-w-xs mt-5" />
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn bg-[#006bfd] mt-4 text-[#fff]" id="upload">REGISTER</button>
+                </div>
+                <div class="mt-5 text-center">
+                    <a class="text-[#006bfd]" href="./login.html">ALREADY A USER? PLEASE LOGIN</a>
+                </div>
+            </div>
+        </form>     
+    </div>
+    <!-- form ended -->
 
-
-        <!-- form ended -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="signup.js"></script>  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="signup.js"></script>
 </body>
 </html>

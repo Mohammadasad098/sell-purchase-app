@@ -12,6 +12,7 @@ const description = document.querySelector("#description");
 const price = document.querySelector("#price");
 const name = document.querySelector("#name");
 const contactNumber = document.querySelector("#contact-number");
+const profileImg = document.querySelector("#profile-img");
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
