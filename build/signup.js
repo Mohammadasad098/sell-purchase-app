@@ -7,6 +7,7 @@ const password = document.querySelector('#password');
 const firstname = document.querySelector('#firstname');
 const lastname = document.querySelector('#lastname');
 const image = document.querySelector('#signup-image');
+const submitButton = document.querySelector('#sub-button');
 
 const uploadFile = async () => {
     const files = image.files[0];
@@ -21,7 +22,7 @@ const uploadFile = async () => {
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
-
+    submitButton.innerHTML = `<h1>Loading...<h1/>`
 
     if (!firstname.value || !lastname.value || !email.value || !password.value || !image.files.length) {
         alert('Please fill out all fields.');
