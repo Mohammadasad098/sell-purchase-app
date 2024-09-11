@@ -13,13 +13,13 @@ const firebaseConfig = {
   measurementId: "G-NSTDMN4DMJ"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firebase services
+
 const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-// Export necessary modules for use in other files
+
 export { app, auth, db, storage, ref, uploadBytes, getDownloadURL };

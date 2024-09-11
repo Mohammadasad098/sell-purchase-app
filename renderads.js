@@ -27,7 +27,6 @@ getDocs(colRef)
       ...doc.data()
     }));
 
-    // Log the title of each product
     products.forEach(product => {
       div.innerHTML += `      <div class="card bg-base-100 w-96 shadow-xl">
   <figure>
