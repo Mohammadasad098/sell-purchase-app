@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "sell-purchase-app-098",
     "public": "build",
     "ignore": [
       "firebase.json",
